@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "antd": "^5.14.1",
     "sass": "^1.71.1"
   }
 }
