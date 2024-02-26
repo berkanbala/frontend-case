@@ -57,8 +57,41 @@
   display: none;
 }
 
+.ant-select-selection-item .ant-select-selection-item-remove {
+  padding: 2px;
+  color: white;
+  background-color: rgb(150, 158, 170);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 4px;
+  width: 20px;
+  justify-content: center;
+}
+
 .ant-select-dropdown .ant-select-item-option-state {
   display: none;
+}
+
+.ant-select-selection-placeholder {
+  padding-left: 11px;
+}
+
+.ant-select-multiple .ant-select-selection-overflow-item {
+  flex: none;
+  align-self: center;
+  max-width: 100%;
+  display: inline-flex;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.ant-select-outlined.ant-select-multiple .ant-select-selection-item {
+  padding: 2px 4px;
+  height: 30px;
+}
+
+.ant-checkbox .ant-checkbox-input {
+  // cursor: default !important;
 }
 
 .ant-checkbox {
@@ -66,6 +99,7 @@
 
   & + span {
     display: flex;
+    // cursor: not-allowed;
   }
 
   & + span > span {
@@ -89,6 +123,15 @@
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+
+  span {
+    font-size: small;
+  }
+
+  .rickandmorty-description-name {
+    font-family: "Courier New", Courier, monospace;
+    font-size: medium;
+  }
 }
 
 .dropdown-value {
@@ -97,9 +140,9 @@
 
 .ant-select-selection-item {
   .ant-checkbox {
-    & + span {
-      // display: none !important;
-    }
+    // & + span {
+    // display: none !important;
+    // }
 
     & + span > span {
       display: none !important;
